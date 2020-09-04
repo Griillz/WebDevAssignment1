@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      integrity="sha256-h20CPZ0QyXlBuAw7A+KluUYx/3pK+c7lYEpqLTlxjYQ="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/main.css">
+    <script defer src="app.js"></script>
+    <title>Keville Chocolates</title>
+  </head>
+  <body>
+    <template id="responseTemplate">
+        <div class="responsecss">
+            <h1><span id="responseName"></span></h1>
+            <h3><p id="responseReview"></p></h3>
+            <span id="responseRating"></span>
+            <h4><span id="responseDate"></span></h4>
+        </div>
+    </template>
+    <div class="container">
+      <div class="heading">
+        <h1 class="logo">
+          <span class="secondary">Keville</span> Handcrafted Chocolates
+        </h1>
+      </div>
+      <div id="input">
+        <img src="/dist/img/Lemon (1).jpg" alt="">
+        <h2> <span class="money">Average Rating</span></h2>
+        <div class="totalstars">
+          <span class="far fa-star fa-3x" id = "six"></span>
+          <span class="far fa-star fa-3x" id = "seven"></span>
+          <span class="far fa-star fa-3x" id = "eight"></span>
+          <span class="far fa-star fa-3x" id = "nine"></span>
+          <span class="far fa-star fa-3x" id = "ten"></span>
+        </div> 
+        <input type="text" class="textbox" id="name" placeholder="Name"></input>
+        <textarea name="review" class="textbox" id="review" placeholder="Leave review here..." rows="10"></textarea>
+        <div class="ratingstars" id="ratingstars">
+            <span class="far fa-star fa-2x" id="one"></span>
+            <span class="far fa-star fa-2x" id="two"></span>
+            <span class="far fa-star fa-2x" id="three"></span>
+            <span class="far fa-star fa-2x" id="four"></span>
+            <span class="far fa-star fa-2x" id="five"></span>
+        </div> 
+        <button type="button" id="submit">Submit</button>
+      </div>
+      <div id="inject">
+
+      </div>
+    </div>
+  </body>
+</html>
